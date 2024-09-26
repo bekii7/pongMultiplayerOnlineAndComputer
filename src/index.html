@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pong Game</h1>
+        <div class="pong-logo">
+            <div class="ball"></div>
+        </div>
+        <button class="button friend" >Play Online</button>
+        <button class="button cpu" >Play with Computer</button>
+        
+        <div class="idField">
+            <div>
+                <input type="text" placeholder="create room id" class="createInput">
+                <button class="create">create</button>
+            </div>
+            <div>
+                <input type="text" placeholder="enter room id" class="joinInput">
+                <button class="join">join</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <!-- <script src="socket.io/socket.io.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.0.0/dist/socket.io.min.js"></script>
+    <script src= "home.js" type="module"></script>
+</html>

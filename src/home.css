@@ -1,0 +1,136 @@
+body {
+  background-color: #1a202c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1.25rem;
+  color: #1a202c;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #e2e8f0;
+}
+.button:hover {
+      background-color: #e2e8f0;
+  }
+  .pong-logo {
+      position: relative;
+      margin-left: 150px;
+      width: 200px;
+      height: 100px;
+      margin-bottom: 2rem;
+      border: 2px solid white;
+  }
+  .pong-logo::before, .pong-logo::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 50px;
+      background-color: white;
+  }
+  .pong-logo::before {
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .pong-logo::after {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .ball {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      animation: moveBall 2s infinite linear;
+  }
+  @keyframes moveBall {
+      0% { top: 45px; left: 95px; }
+      25% { top: 5px; left: 185px; }
+      50% { top: 45px; left: 95px; }
+      75% { top: 85px; left: 5px; }
+      100% { top: 45px; left: 95px; }
+  }
+  .joinCreate{
+    position: relative;
+    
+    
+  }
+  .create{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #1a202c;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .join{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #1a202c;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+.toggle{
+  visibility: visible;
+}
+
+.joinId{
+  
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #1a202c;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+}
+.createId{
+  
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: #1a202c;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+}
